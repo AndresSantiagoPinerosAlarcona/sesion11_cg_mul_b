@@ -46,19 +46,11 @@ function init() {
         arrCube.push(cubo(t, t, t, 0, 0, 0, 'Basic', (i==0 ? 'red': i==1 ? 'green' : 'blue'), false));
         
       if (i == 0)
-            arrCube[i].geometry.translate(0, d*2, -d)
+            arrCube[i].geometry.translate(0, d*2, -d) //Dos unidades (d) en y, una unidad (-d) en z  
         else if (i == 1)
             arrCube[i].geometry.translate(0, d, 0)
         else
             arrCube[i].geometry.translate(0, 0, d)
-
-        //arrCube[i].geometry.translate((i==0)*d, (i==1)*d, (i==2)*d*2)
-        //arrCube[i].geometry.translate(
-        //arrCube[i].geometry.translate(
-        //Rotacion :)
-        //arrCube[i].geometry.rotateX(-Math.PI/2);
-        //arrCube[i].geometry.rotateY(Math.PI);
-        //arrCube[i].geometry.rotateZ(-Math.PI/2);
     }
 
 
