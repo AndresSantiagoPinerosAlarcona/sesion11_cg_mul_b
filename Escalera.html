@@ -47,12 +47,8 @@ function init() {
         
 
         //Escalera
-      	if (i == 0)
-        	arrCube[i].geometry.translate(0, d*2, -d) //Dos unidades (d) en y, una unidad (-d) en z  
-        else if (i == 1)
-            arrCube[i].geometry.translate(0, d, 0)
-        else
-            arrCube[i].geometry.translate(0, 0, d)
+      	arrCube[i].geometry.translate(0*d,i*d,i*d); //Sube una unidad en Y y en Z
+		arrCube[i].geometry.rotateY((-Math.PI / 2)); //Rota los cubos 90 grados 
     }
 
 
