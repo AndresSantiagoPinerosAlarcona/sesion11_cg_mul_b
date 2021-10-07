@@ -45,10 +45,10 @@ function init() {
         d = t * 1.05
         arrCube.push(cubo(t, t, t, 0, 0, 0, 'Basic', (i==0 ? 'red': i==1 ? 'green' : 'blue'), false));
         
-
         //Escalera
       	arrCube[i].geometry.translate(0*d,i*d,i*d); //Sube una unidad en Y y en Z
-		arrCube[i].geometry.rotateY((-Math.PI / 2)); //Rota los cubos 90 grados 
+      	arrCube[i].geometry.rotateY((-Math.PI / 2)); //Rota los cubos 90 grados
+
     }
 
 
